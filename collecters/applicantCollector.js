@@ -117,6 +117,7 @@ const deleteApplicantById = async (req, res, next) => {
 
   try {
     applicant.remove();
+    res.json({ message: "Deleted Applicant" })
   } catch (err) {
     next(Error(err, 500));
   }
@@ -125,7 +126,6 @@ const deleteApplicantById = async (req, res, next) => {
 exports.getAllApplicants = getAllApplicants;
 exports.getApplicantById = getApplicantById;
 exports.createApplicant = createApplicant;
-// exports.getResumeById = getResumeById;
 exports.editResumeById = editResumeById;
 exports.deleteApplicantById = deleteApplicantById;
 exports.getAllSchedule = getAllSchedule;
