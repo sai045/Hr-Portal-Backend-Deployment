@@ -101,7 +101,6 @@ router.patch("/:id", async (req, res) => {
     return res.status(500).json({ msg: "Couldn't find the Leave Request" });
   }
   res.json({ leaverequest });
-  console.log(leaverequest);
 });
 
 module.exports = router;

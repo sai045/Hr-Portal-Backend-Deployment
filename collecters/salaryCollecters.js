@@ -89,7 +89,6 @@ const groupSalaryByDepartment = async (req, res, next) => {
   let GroupSalary = [];
   for (let i = 0; i < groups.length; i++) {
     let length = groups[i].length;
-    console.log(length);
     let groupSalary = 0;
     for (let j = 0; j < length; j++) {
       let arrElement = groups[i][j];
